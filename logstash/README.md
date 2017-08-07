@@ -1,11 +1,11 @@
 St2 Logstash Filters & Dashboard
 ==========
 
-####Introduction
+## Introduction
 
 Logstash provides a convenient way to view and search your St2 audit logs.
 
-####Setup filter
+## Setup filter
 
 Copy all of the .conf files from the filters folder in to /etc/logstash/conf.d:
 
@@ -17,7 +17,7 @@ Then restart Logstash:
 
 Your St2 audit logs should start getting indexed by ElasticSearch shortly.  You will then be able to see them through your default dashboard.
 
-####Setup dashboard
+## Setup dashboard
 
 The dashboards are located in the 'dashboards' folder.  The easiest way to install them is through the Kibana UI.  
 
