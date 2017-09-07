@@ -1,10 +1,10 @@
 Fabric Integration
 =================
 
-##Introduction
+## Introduction
 This integration pack will take existing fabfiles and convert the Fabric tasks in to ST2 actions.
 
-##Setup
+## Setup
 
 To use this conversion script, copy the entire fabric directory into your newly named pack.
 
@@ -18,7 +18,7 @@ Then, copy your `fabfile` into the `actions/lib` directory of your new pack.
   cp fabfile.py /opt/stackstorm/packs/new_pack_name/actions/lib
 ```
 
-##Installation
+## Installation
 
 Once the fabfile is in place, run the following command:
 	
@@ -30,6 +30,6 @@ This will generate the json files for all tasks in the fabfile.  You can now eit
 	st2 action create </path/to/json>
 Or you can reload all content and they will get picked up.
 
-##Known Issues
+## Known Issues
 
 * Formatter sometimes creates immutable attributes without default values, preventing loading of newly created action metadata
