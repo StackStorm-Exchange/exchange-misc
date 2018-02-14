@@ -1,7 +1,8 @@
 Setting up St2 to use rsyslog
 ============
 
-####Introduction
+#### Introduction
+
 Following these directions you can set up St2 to log via rsyslog either locally or remotely.
 
 #### Setup St2 to use syslog
