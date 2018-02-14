@@ -7,12 +7,17 @@ Following these directions you can set up St2 to log via rsyslog either locally 
 
 #### Setup St2 to use syslog
 
-Configure st2 to use syslog.  In /etc/st2/st2.conf, make sure these lines to point to syslog.conf instead of logging.conf:
+Configure st2 to use syslog.  In `/etc/st2/st2.conf`, make sure these lines to point to syslog.conf instead of logging.conf:
 
-    logging = /etc/st2api/syslog.conf
-    logging = /etc/st2reactor/syslog.conf
-    logging = /etc/st2actions/syslog.conf
-    logging = /etc/st2auth/syslog.conf
+    logging = /etc/st2/syslog.actionrunner.conf
+    logging = /etc/st2/syslog.api.conf
+    logging = /etc/st2/syslog.auth.conf
+    logging = /etc/st2/syslog.garbagecollector.conf
+    logging = /etc/st2/syslog.notifier.conf
+    logging = /etc/st2/syslog.resultstracker.conf
+    logging = /etc/st2/syslog.rulesengine.conf
+    logging = /etc/st2/syslog.sensorcontainer.conf
+    logging = /etc/st2/syslog.stream.conf
 
 Restart St2:
 
